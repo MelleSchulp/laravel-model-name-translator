@@ -1,0 +1,38 @@
+{
+    "name": "nin/laravel-model-name-translator",
+    "description": "Enables the translation of model names in various contexts.",
+    "keywords": ["laravel", "translation", "model"],
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Melle Schulp",
+            "email": "schulp@herseninstituut.knaw.nl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Nin\\ModelNameTranslator\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nin\\ModelNameTranslator\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nin\\ModelNameTranslator\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "illuminate/support": "^6|^7|^8"
+    }
+}
