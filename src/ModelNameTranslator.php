@@ -16,7 +16,7 @@ class ModelNameTranslator extends AbstractModelNameTranslator
                 config('model-name-translator.translation-file'),
                 $this->model,
                 $this->quantity->value,
-                $this->articleType?->value ?? $this->context?->value
+                $this->context?->value ?? $this->articleType?->value
             )
         );
     }
