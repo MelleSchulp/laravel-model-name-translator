@@ -33,6 +33,6 @@
     },
     "require": {
         "php": "^8",
-        "laravel/framework": "^10.10"
+        "laravel/framework": "^10.10 || ^12.0"
     }
 }
